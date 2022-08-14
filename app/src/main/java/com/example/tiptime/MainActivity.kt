@@ -4,40 +4,36 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tiptime.databinding.ActivityMainBinding
 import java.text.NumberFormat
-import kotlin.math.ceil
 
 
 class MainActivity : AppCompatActivity() {
-    // instance of ActivityMainBinding
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        // Click Lister to button
-        binding.calculateButton.setOnClickListener {calculateTip()}
+        val initialTip = 0.00
+        displayTip(initialTip)
+        binding.calculateButton.setOnClickListener { calculateTip() }
     }
-    // calculates tip according to the options you choose
-    private fun calculateTip(){
-        val stringInTextField = binding.costOfService.text.toString()
-        val cost = stringInTextField.toDoubleOrNull() ?: return
-        val tipPercentage = when(binding.tipOptions.checkedRadioButtonId){
-            R.id.option_twenty_percent -> 0.20
-            R.id.option_eighteen_percent -> 0.18
-            else -> 0.15
-        }
-        var tip = cost * tipPercentage
 
-        if(binding.roundUpSwitch.isChecked){
-            tip = ceil(tip)
+    private fun calculateTip() {
+        val inputNumber: Double = binding.inputValue.text.toString().toDoubleOrNull() ?: return
+        var tip = when (binding.serviceOption.checkedRadioButtonId) {
+            R.id.great_option -> 0.18 * inputNumber
+            R.id.good_option -> 0.15 * inputNumber
+            else -> 0.12 * inputNumber
+        }
+        if (binding.roundUpSwitch.isChecked) {
+            tip = kotlin.math.ceil(tip)
         }
         displayTip(tip)
     }
-    // displays tip
-    private fun displayTip(tip: Double){
-        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
-    }
 
+    private fun displayTip(tip: Double) {
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+        binding.tipResult.text =getString(R.string.tip_amount, formattedTip)
+    }
 }
