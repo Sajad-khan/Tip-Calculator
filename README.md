@@ -5,4 +5,4 @@ Moreover, you can also round up the result using the round up switch.
 It has a built in currency formatter and it formats currency according to settings of your device.
 
 
-![TipTime](https://user-images.githubusercontent.com/91522619/184532067-33acc37b-826b-4e11-8d96-6d015cb89938.jpg)
+![Tip](https://user-images.githubusercontent.com/91522619/184532205-f15710ed-18a5-41d9-a61a-74370cfb5d9f.png)
