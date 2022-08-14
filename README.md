@@ -4,4 +4,5 @@ You enter the total cost of the service and then selecting one of the radio butt
 Moreover, you can also round up the result using the round up switch.
 It has a built in currency formatter and it formats currency according to settings of your device.
 
-mtp://Xiaomi_Redmi_Note_10S_FYMJNVZPD6FENNOV/Internal%20shared%20storage/DCIM/Screenshots/Screenshot_2022-08-14-15-30-19-601_com.example.tiptime.jpg
+
+![TipTime](https://user-images.githubusercontent.com/91522619/184532067-33acc37b-826b-4e11-8d96-6d015cb89938.jpg)
