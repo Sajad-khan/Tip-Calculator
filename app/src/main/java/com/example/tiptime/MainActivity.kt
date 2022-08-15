@@ -9,18 +9,23 @@ import java.text.NumberFormat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
+    val initialTip = 0.00
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val initialTip = 0.00
+
         displayTip(initialTip)
         binding.calculateButton.setOnClickListener { calculateTip() }
     }
 
     private fun calculateTip() {
-        val inputNumber: Double = binding.inputValue.text.toString().toDoubleOrNull() ?: return
+        val inputNumber = binding.inputValue.text.toString().toDoubleOrNull()
+        if(inputNumber==null){
+            displayTip(initialTip)
+            return
+        }
+
         var tip = when (binding.serviceOption.checkedRadioButtonId) {
             R.id.great_option -> 0.18 * inputNumber
             R.id.good_option -> 0.15 * inputNumber
