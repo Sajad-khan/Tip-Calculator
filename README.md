@@ -1,5 +1,8 @@
 # Tip-Calculator
 An app made with Kotlin that calculates tip for you.
-It takes the service cost as input and then calculates the tip based on the level of service(great, good, ok) and the final tip can be rounded off
-or left as it is using the round off switch.
-![Screenshot_20220812_172100](https://user-images.githubusercontent.com/91522619/184348472-0dbc994f-c566-415e-af98-0979528ff270.png)
+You enter the total cost of the service and then selecting one of the radio buttons it calculates the tip for you.
+Moreover, you can also round up the result using the round up switch.
+It has a built in currency formatter and it formats currency according to settings of your device.
+
+
+![Tip](https://user-images.githubusercontent.com/91522619/184532205-f15710ed-18a5-41d9-a61a-74370cfb5d9f.png)
