@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-        val inputNumber = binding.inputValue.text.toString().toDoubleOrNull()
+        val inputNumber = binding.inputValueEditText.text.toString().toDoubleOrNull()
         if(inputNumber==null){
             displayTip(initialTip)
             return

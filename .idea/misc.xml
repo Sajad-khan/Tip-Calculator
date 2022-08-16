@@ -5,7 +5,10 @@
       <map>
         <entry key="app/src/main/res/drawable-anydpi-v26/ic_launcher_background.xml" value="0.252" />
         <entry key="app/src/main/res/drawable-anydpi-v26/ic_launcher_foreground.xml" value="0.252" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
+        <entry key="app/src/main/res/drawable/ic_round_up.xml" value="0.176" />
+        <entry key="app/src/main/res/drawable/ic_service.xml" value="0.176" />
+        <entry key="app/src/main/res/drawable/ic_store.xml" value="0.176" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.252" />
       </map>
     </option>
