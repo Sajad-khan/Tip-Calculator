@@ -7,4 +7,4 @@ It has a built in currency formatter and it formats currency according to settin
 
 
 
-![Tip Time](https://user-images.githubusercontent.com/91522619/184952222-d07935f5-21d1-48a1-bdfd-beabfa55ea60.png)
+![Tip Time](https://user-images.githubusercontent.com/91522619/185554636-d08a6798-60dc-4d1a-af9a-5d47f9d722fa.png)
