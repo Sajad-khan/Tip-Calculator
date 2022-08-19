@@ -6,4 +6,5 @@ It has a built in currency formatter and it formats currency according to settin
 
 
 
-![Tip Time](https://user-images.githubusercontent.com/91522619/184796319-e6f15317-72ef-46a3-ac65-a9cbe783cff7.png)
+
+![Tip Time](https://user-images.githubusercontent.com/91522619/184952222-d07935f5-21d1-48a1-bdfd-beabfa55ea60.png)
